@@ -1,0 +1,17 @@
+{
+  "name": "telebot",
+  "version": "1.0.0",
+  "description": "a bot created for demo purpose",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ABHISEK",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "nodemon": "^3.1.0",
+    "telegraf": "^4.16.3"
+  }
+}
