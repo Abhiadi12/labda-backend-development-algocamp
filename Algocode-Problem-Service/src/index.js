@@ -1,5 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const errorHandler = require("./utils/errorHandler");
 
 const { PORT } = require("./config/server.config");
 const apiRouter = require("./routes");
@@ -16,6 +17,10 @@ app.get("/ping", (req, res) => {
   return res.json({ message: "Problem Servive is alive" });
 });
 
+//Override the default error middleware of the express and it is the last middleware
+//It only executes when some error occurs
+//4 parameters and first start with err
+app.use(errorHandler);
 app.listen(PORT, () => {
   console.log(`Server started at PORT: ${PORT}`);
 });

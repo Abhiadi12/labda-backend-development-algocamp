@@ -5,4 +5,4 @@ const v1Router = express.Router();
 
 v1Router.use("/problems", problemRouter);
 
-module.exports = apiRouter;
+module.exports = v1Router;
