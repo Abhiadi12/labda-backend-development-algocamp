@@ -6,7 +6,7 @@ function pingProblemController(req, res) {
   return res.json({ message: "Problem controller is up" });
 }
 
-function addProblem(req, res, err) {
+function addProblem(req, res, next) {
   try {
     throw new BadRequest("property name", { missing: ["Problem Name"] });
   } catch (error) {
@@ -14,7 +14,7 @@ function addProblem(req, res, err) {
   }
 }
 
-function getProblem(req, res) {
+function getProblem(req, res, next) {
   try {
     throw new NotImplemented("getProblem");
   } catch (error) {
@@ -22,7 +22,7 @@ function getProblem(req, res) {
   }
 }
 
-function getProblems(req, res) {
+function getProblems(req, res, next) {
   try {
     throw new NotImplemented("getProblems");
   } catch (error) {
@@ -30,7 +30,7 @@ function getProblems(req, res) {
   }
 }
 
-function deleteProblem(req, res) {
+function deleteProblem(req, res, next) {
   try {
     throw new NotImplemented("deleteProblem");
   } catch (error) {
@@ -38,7 +38,7 @@ function deleteProblem(req, res) {
   }
 }
 
-function updateProblem(req, res) {
+function updateProblem(req, res, next) {
   try {
     throw new NotImplemented("updateProblem");
   } catch (error) {

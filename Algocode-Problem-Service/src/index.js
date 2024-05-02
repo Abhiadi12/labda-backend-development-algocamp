@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const errorHandler = require("./utils/errorHandler");
+const connectToDB = require("./config/db.config");
 
 const { PORT } = require("./config/server.config");
 const apiRouter = require("./routes");
@@ -21,6 +22,7 @@ app.get("/ping", (req, res) => {
 //It only executes when some error occurs
 //4 parameters and first start with err
 app.use(errorHandler);
-app.listen(PORT, () => {
+app.listen(PORT, async () => {
+  await connectToDB();
   console.log(`Server started at PORT: ${PORT}`);
 });
