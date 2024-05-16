@@ -1,4 +1,3 @@
-const { StatusCodes } = require("http-status-codes");
 const NotImplemented = require("../error/notImplemented.error");
 const BadRequest = require("../error/badRequest.error");
 const { ProblemService } = require("../services");
