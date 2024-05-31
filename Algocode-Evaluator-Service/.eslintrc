@@ -1,16 +1,4 @@
 {
-<<<<<<< HEAD
-    "parser": "@typescript-eslint/parser",
-    "extends": ["plugin:@typescript-eslint/recommended"],
-    "parserOptions": { "ecmaVersion": 2018, "sourceType": "module" },
-    "rules": {
-        "semi": ["error", "always"],
-        "simple-import-sort/imports": "error",
-        "simple-import-sort/exports": "error"
-    },
-    "plugins": ["simple-import-sort"]
-  }
-=======
   "parser": "@typescript-eslint/parser",
   "extends": ["plugin:@typescript-eslint/recommended"],
   "parserOptions": { "ecmaVersion": 2018, "sourceType": "module" },
@@ -21,4 +9,3 @@
   },
   "plugins": ["simple-import-sort"]
 }
->>>>>>> c690deaf2646bc50f1b3baae34a144444c43ac08
