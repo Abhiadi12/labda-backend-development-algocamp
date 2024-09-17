@@ -1,0 +1,2 @@
+- simple readme file
+- read it from file
